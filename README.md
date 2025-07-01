@@ -1,2 +1,2 @@
-# ollie-design-system
+# Ollie Design-System
 Pallevar Design System
