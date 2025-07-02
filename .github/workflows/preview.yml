@@ -28,7 +28,7 @@ jobs:
       - name: Deploy PR Preview
         uses: rossjrw/pr-preview-action@v1
         with:
-          token: ${{ secrets.PERSONAL_GH_TOKEN }}
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           preview-branch: gh-pages
           source-dir: ./storybook-static
           umbrella-dir: pr-preview
@@ -38,4 +38,4 @@ jobs:
           header: pr-preview
           message: |
             🚀 Preview: https://pallevar-me.github.io/ollie-design-system/pr-preview/pr-${{ github.event.pull_request.number }}
-          GITHUB_TOKEN: ${{ secrets.PERSONAL_GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
