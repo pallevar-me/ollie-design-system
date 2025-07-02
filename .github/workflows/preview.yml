@@ -39,4 +39,4 @@ jobs:
           message: |
               🚀 Preview: https://pallevar-me.github.io/ollie-design-system/pr-preview/pr-${{ github.event.pull_request.number }}
         env:
-          GITHUB_TOKEN: ${{ secrets.PERSONAL_GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
