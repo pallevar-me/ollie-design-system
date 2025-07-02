@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main # Cambia esto si tu rama principal tiene otro nombre
+  pull_request:
+     branches:
+      - main # Generar PR Previews para pull requests dirigidos a main
 
 jobs:
   build-and-deploy:
@@ -34,3 +37,16 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./storybook-static
+
+      # 6. Generar PR Preview (para pull requests)
+      - name: Deploy PR Preview
+        if: github.event_name == 'pull_request'
+        uses: rossjrw/pr-preview-action@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          preview-branch: gh-pages
+          source-dir: ./storybook-static
+          umbrella-dir: pr-preview
+
+
+          
