@@ -1,0 +1,31 @@
+/* src/components/Button/styles.module.css */
+
+.styles_button__MEHAO {
+    font-size: 16px;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+  }
+  
+  .styles_primary__34ak0 {
+    background-color: #0E40C7;
+    color: white;
+  }
+  
+  .styles_primary__34ak0:hover {
+    background-color: #3769F1;
+  }
+  
+  .styles_secondary__d351A {
+    background-color: #e0e0e0;
+    color: #333;
+  }
+  
+  .styles_secondary__d351A:hover {
+    background-color: #c0c0c0;
+  }
+  
+
+/*# sourceMappingURL=stories-components-Button-Button-stories.0796cfdd.chunk.css.map*/
