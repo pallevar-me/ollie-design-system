@@ -31,12 +31,3 @@ jobs:
           preview-branch: gh-pages
           source-dir: ./storybook-static
           umbrella-dir: pr-preview
-
-      - name: Comentar con URL de PR Preview
-        uses: marocchino/sticky-pull-request-comment@v2
-        with:
-          header: pr-preview
-          message: |
-              🚀 Preview: https://pallevar-me.github.io/ollie-design-system/pr-preview/pr-${{ github.event.pull_request.number }}
-        env:
-          github_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
