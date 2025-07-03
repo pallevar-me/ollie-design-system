@@ -23,6 +23,6 @@ Primary.args = {
 
 export const Secondary = Template.bind({});
 Secondary.args = {
-  label: 'Secondary Button',
+  label: 'Test Button',
   variant: 'secondary',
 };
